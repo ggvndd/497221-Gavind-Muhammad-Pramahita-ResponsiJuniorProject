@@ -112,7 +112,7 @@ namespace ResponsiJunproGVND
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_id_karyawan", r.Cells["_id_karyawan"].Value.ToString());
                 cmd.Parameters.AddWithValue("_nama", tbNama.Text);
-                cmd.Parameters.AddWithValue("_id_dep", cbDepartemen.Text);
+                cmd.Parameters.AddWithValue("_id_dept", cbDepartemen.Text);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
                     MessageBox.Show("Data Karyawan Berhasil Diupdate", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
